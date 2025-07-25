@@ -18,8 +18,8 @@ namespace StudentCRUD
         public Form1()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -33,8 +33,8 @@ namespace StudentCRUD
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-        }
 
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(conStr))
@@ -49,20 +49,13 @@ namespace StudentCRUD
                 MessageBox.Show("Added");
                 LoadData();
                 ClearFields();
+
             }
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
-        private void ClearFields()
-        {
-            txtName.Clear();
-            txtAge.Clear();
-            txtEmail.Clear();
-            selectedId = 0;
-        }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (selectedId == 0) return;
@@ -102,7 +95,6 @@ namespace StudentCRUD
         {
             LoadData();
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -113,6 +105,23 @@ namespace StudentCRUD
                 txtAge.Text = row.Cells[2].Value.ToString();
                 txtEmail.Text = row.Cells[3].Value.ToString();
             }
+        }
+        private void ClearFields()
+        {
+            txtName.Clear();
+            txtAge.Clear();
+            txtEmail.Clear();
+            selectedId = 0;
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStudentRegistrationSystem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,7 +39,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblStudentRegistrationSystem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(70, 58);
+            this.lblName.Location = new System.Drawing.Point(227, 58);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(53, 20);
             this.lblName.TabIndex = 0;
@@ -56,17 +56,17 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(129, 55);
+            this.txtName.Location = new System.Drawing.Point(308, 55);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(422, 27);
+            this.txtName.Size = new System.Drawing.Size(450, 27);
             this.txtName.TabIndex = 1;
             // 
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(129, 111);
+            this.txtAge.Location = new System.Drawing.Point(308, 111);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(422, 27);
+            this.txtAge.Size = new System.Drawing.Size(450, 27);
             this.txtAge.TabIndex = 3;
             this.txtAge.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -74,7 +74,7 @@
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(70, 114);
+            this.lblAge.Location = new System.Drawing.Point(227, 114);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(38, 20);
             this.lblAge.TabIndex = 2;
@@ -83,16 +83,17 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(129, 172);
+            this.txtEmail.Location = new System.Drawing.Point(308, 172);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(422, 27);
+            this.txtEmail.Size = new System.Drawing.Size(450, 27);
             this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
             this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMail.Location = new System.Drawing.Point(70, 175);
+            this.lblMail.Location = new System.Drawing.Point(227, 175);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(40, 20);
             this.lblMail.TabIndex = 4;
@@ -154,15 +155,16 @@
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label1
+            // lblStudentRegistrationSystem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 29);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Student Registration System";
+            this.lblStudentRegistrationSystem.AutoSize = true;
+            this.lblStudentRegistrationSystem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentRegistrationSystem.Location = new System.Drawing.Point(348, 6);
+            this.lblStudentRegistrationSystem.Name = "lblStudentRegistrationSystem";
+            this.lblStudentRegistrationSystem.Size = new System.Drawing.Size(315, 29);
+            this.lblStudentRegistrationSystem.TabIndex = 11;
+            this.lblStudentRegistrationSystem.Text = "Student Registration System";
+            this.lblStudentRegistrationSystem.Click += new System.EventHandler(this.lblStudentRegistrationSystem_Click);
             // 
             // Form1
             // 
@@ -170,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(982, 532);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblStudentRegistrationSystem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnDelete);
@@ -204,7 +206,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStudentRegistrationSystem;
     }
 }
 
